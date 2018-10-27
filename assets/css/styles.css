@@ -28,3 +28,12 @@ footer a, footer p,footer h5,  footer a:hover {
     color:white;
     font-weight:bold;
 }
+
+img{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style:none;
+}

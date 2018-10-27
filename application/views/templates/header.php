@@ -24,8 +24,11 @@
 <body>
 
 <div class="row justify-content-md-center" style="background-image: linear-gradient(to top, #E94E1B , #F2C900);">
-  <div class="col col-12 col-md-10">
+  <div class="col col-12 col-lg-2">
     <img class="img-fluid d-xl-block d-none " src="assets/img/logo.png" alt="logo">
+  </div>
+  
+  <div class="col col-lg-10">
     <!-- <h1 style="font-family: 'Trade Winds', cursive;" class="font-weight-bold">Provence Sénégal</h1> -->
       <h1 class="font-weight-bold">Provence Sénégal</h1>
   </div> 
