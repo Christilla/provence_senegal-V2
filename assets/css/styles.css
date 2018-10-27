@@ -24,7 +24,7 @@ h1{
 }
  */
 
-footer a, p, h5, a:hover {
+footer a, footer p,footer h5,  footer a:hover {
     color:white;
     font-weight:bold;
 }

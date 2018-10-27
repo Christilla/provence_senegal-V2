@@ -24,9 +24,12 @@
         <!-- Grid column -->
 
           <div class="col-md-3">
-          <h5 class="text-uppercase">Accueil</h5>
-
+          
           <ul class="list-unstyled">
+            <li>
+             <a href="#"> <h5 class="text-uppercase">Accueil</h5></a>
+            </li>
+
             <li>
               <a href="#!">Actualités</a>
             </li>
