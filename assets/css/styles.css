@@ -29,11 +29,12 @@ footer a, footer p,footer h5,  footer a:hover {
     font-weight:bold;
 }
 
-img{
-    margin-top:10px;
-    margin-bottom: 10px;
+.container-fluid img{
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 li{
     list-style:none;
+    margin-bottom: 10px;
 }

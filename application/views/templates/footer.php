@@ -27,14 +27,14 @@
           
           <ul class="list-unstyled">
             <li>
-             <a href="#"> <h5 class="text-uppercase">Accueil</h5></a>
+             <a href="<?= site_url('home')?>"> <h5 class="text-uppercase">Accueil</h5></a>
             </li>
 
             <li>
-              <a href="#!">Actualités</a>
+              <a href="<?= site_url('actu')?>">Actualités</a>
             </li>
             <li>
-              <a href="#!">Contact</a>
+              <a href="<?= site_url('contact')?>">Contact</a>
             </li>
           
           </div>
@@ -46,10 +46,10 @@
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Aide aux femmes</a>
+                <a href="<?= site_url('social#femmes')?>">Aide aux femmes</a>
               </li>
               <li>
-                <a href="#!">Aide aux hopitaux</a>
+                <a href="<?= site_url('social#hopital')?>">Aide aux hopitaux</a>
               </li>
               
             </ul>
@@ -65,10 +65,10 @@
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Tourisme solidaire</a>
+                <a href="<?= site_url('culturel#tourisme')?>">Tourisme solidaire</a>
               </li>
               <li>
-                <a href="#!">Centres de vacances</a>
+                <a href="<?= site_url('culturel#vacances')?>">Centres de vacances</a>
               </li>
              
             </ul>

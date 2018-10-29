@@ -24,13 +24,14 @@
 <body>
 
 <div class="row justify-content-md-center" style="background-image: linear-gradient(to top, #E94E1B , #F2C900);">
-  <div class="col col-12 col-lg-2">
+  <div class="col col-lg-9">
     <img class="img-fluid d-xl-block d-none " src="assets/img/logo.png" alt="logo">
+    <h1 class="font-weight-bold">Provence Sénégal</h1>
   </div>
   
-  <div class="col col-lg-10">
+  <div class="col col-lg-3">
     <!-- <h1 style="font-family: 'Trade Winds', cursive;" class="font-weight-bold">Provence Sénégal</h1> -->
-      <h1 class="font-weight-bold">Provence Sénégal</h1>
+      <img src="assets/img/baobab.png" alt="baobab">
   </div> 
 </div>
 
@@ -38,7 +39,7 @@
 <nav class="navbar navbar-expand-lg navbar bg-primary text-light" >  
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"><img src="assets/img/frise3.png">
   <a class="navbar-brand text-light font-weight-bold" href="<?php echo site_url('home')?>">Accueil</a>
 
 
@@ -55,6 +56,7 @@
       <li class="nav-item">
           <a class="nav-link text-light" href="<?php echo site_url('actu')?>">Actualités</a> 
       </li>
+
 
     </ul>
   
