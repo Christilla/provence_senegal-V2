@@ -86,6 +86,10 @@
             <a class="nav-link text-light" href="<?= site_url('connexion')?>"><img src="<?= base_url('assets/img/icon.png')?>">Connexion</a>
         </li>
 
+        <li class="nav-item bg-light text-primary font-weight-bold">
+                <a class="nav-link" href="<?php echo site_url('dashboard')?>">Espace Admin</a>
+            </li>
+
     </ul>
   
 
