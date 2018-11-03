@@ -92,24 +92,11 @@ class Pages extends CI_Controller
         $this->load->view('templates/footer',$datas);
 
     }
+
+    public function logout(){
+
+        $this->session->unset_userdata('oMember');
+        redirect('home');
+    }
+    
 }
-
-
-/* public function documentation(){
-
-   
-
-    $data['title'] = ucfirst("documentation");
-    $data['documentation_actif'] = "active";
-
-
-    $this->load->model('documentation_model');
-    $datas['aoDocumentation'] = $this->documentation_model->get_all();
-
-
-    $this->load->view('templates/header',$data);
-    $this->load->view('pages/documentation', $datas);
-    $this->load->view('templates/footer',$data);
-
-
-} */

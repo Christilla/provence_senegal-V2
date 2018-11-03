@@ -6,9 +6,9 @@
 
         <title>Provence Sénégal</title>
     
-       <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" /> 
-        <link rel="stylesheet" type="text/css" href="assets/js/bootstrap.js" /> 
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+       <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.css')?>" /> 
+        <link rel="stylesheet" type="text/css" href="<?= base_url('assets/js/bootstrap.js')?>" /> 
+        <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/styles.css')?>" />
         <link rel="stylesheet" type="text/css" href="assets/font">
         <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet"> 
        <!--  <style>
@@ -64,7 +64,7 @@
 <nav class="navbar navbar-expand-lg navbar bg-primary text-light" >  
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent"><img src="assets/img/frise3.png">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"><img src="<?= base_url('assets/img/frise3.png')?>">
   <a class="navbar-brand text-light font-weight-bold" href="<?php echo site_url('home')?>">Accueil</a>
 
 
@@ -82,13 +82,22 @@
           <a class="nav-link text-light" href="<?php echo site_url('actu')?>">Actualités</a> 
       </li>
 
-        <li class="nav-item">
-            <a class="nav-link text-light" href="<?= site_url('connexion')?>"><img src="<?= base_url('assets/img/icon.png')?>">Connexion</a>
-        </li>
 
-        <li class="nav-item bg-light text-primary font-weight-bold">
-                <a class="nav-link" href="<?php echo site_url('dashboard')?>">Espace Admin</a>
+        <?php if(!isset($_SESSION['oMember'])):?>
+            <li class="nav-item">
+               <a class="nav-link text-light" href="<?php echo site_url('connexion')?>"><img src="<?= base_url('assets/img/icon.png') ?>"  alt="icone utilisateur">Connexion</a>
             </li>
+
+      <?php else: ?>
+          <li class="nav-item">
+                <a class="nav-link text-light" href="<?php echo site_url('logout')?>"><img src="<?= base_url('assets/img/icon.png')?>"  alt="icone utilisateur">Déconnexion</a>
+            </li>
+          
+      <?php endif ?>      
+
+  <li class="nav-item bg-light text-primary font-weight-bold">
+                <a class="nav-link" href="<?php echo site_url('dashboard')?>">Espace Admin</a>
+            </li> <!-- A remettre dans la conditon if/else -->
 
     </ul>
   

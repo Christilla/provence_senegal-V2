@@ -54,6 +54,7 @@ $route['connexion'] = 'pages/connexion';
 $route['CRUD_news'] = 'Grocery_admin/news';
 $route['CRUD_news/(:any)'] = 'Grocery_admin/news/$1';
 $route['CRUD_news/(:any)/(:num)'] = 'Grocery_admin/news/$1/$2';
+$route['logout'] = 'pages/logout';
 
 $route['actu'] = 'pages/actu';
 
