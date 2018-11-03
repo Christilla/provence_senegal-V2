@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['connexion'] = 'pages/connexion';
+$route['CRUD_news'] = 'Grocery_admin/news';
 
 $route['default_controller'] = 'pages/view';
 /* $route['404_override'] = '';

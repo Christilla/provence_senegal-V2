@@ -14,6 +14,31 @@
        <!--  <style>
             @import url('https://fonts.googleapis.com/css?family=Trade+Winds');
         </style>  -->
+
+         <?php
+                /**
+                 * include css file dynamically
+                 */
+                  if(isset($css_files)){
+
+                 /*   var_dump($css_files); */
+                    switch(true){
+                      case(is_array($css_files)):
+                        foreach($css_files as $path):
+                          echo "<link rel='stylesheet' href='" . $path . "'/>";
+                        endforeach;
+                      break;
+
+                      default:
+                        /*  var_dump($css_files);  */
+                        echo "<link rel='stylesheet' href='" . $css_files . "'/>";
+                      break;
+ 
+                    }
+                  }
+                ?> 
+
+
        
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -25,13 +50,13 @@
 
 <div class="row justify-content-md-center" style="background-image: linear-gradient(to top, #E94E1B , #F2C900);">
   <div class="col col-lg-9">
-    <img class="img-fluid d-xl-block d-none " src="assets/img/logo.png" alt="logo">
+    <img class="img-fluid d-xl-block d-none " src="<?= base_url('assets/img/logo.png')?>" alt="logo">
     <h1 class="font-weight-bold">Provence Sénégal</h1>
   </div>
   
   <div class="col col-lg-3">
     <!-- <h1 style="font-family: 'Trade Winds', cursive;" class="font-weight-bold">Provence Sénégal</h1> -->
-      <img src="assets/img/baobab.png" alt="baobab">
+      <img src="<?= base_url('assets/img/baobab.png')?>" alt="baobab">
   </div> 
 </div>
 

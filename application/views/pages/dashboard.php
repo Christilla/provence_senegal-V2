@@ -4,6 +4,7 @@
 
     <h1>Bienvenue admin!</h1>
 
+    <a href="<?=base_url('CRUD_news')?>"><p>Poster des news sur la page actu</p></a>
 
     </div>
 </div>
