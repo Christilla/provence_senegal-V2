@@ -82,4 +82,34 @@ class Pages extends CI_Controller
        
     }
 
+    public function actu(){
+
+        $this->load->model('news_model');
+        $datas['aoNews'] = $this->news_model->get_all();
+
+        $this->load->view('templates/header',$datas);
+        $this->load->view('pages/actu',$datas);
+        $this->load->view('templates/footer',$datas);
+
+    }
 }
+
+
+/* public function documentation(){
+
+   
+
+    $data['title'] = ucfirst("documentation");
+    $data['documentation_actif'] = "active";
+
+
+    $this->load->model('documentation_model');
+    $datas['aoDocumentation'] = $this->documentation_model->get_all();
+
+
+    $this->load->view('templates/header',$data);
+    $this->load->view('pages/documentation', $datas);
+    $this->load->view('templates/footer',$data);
+
+
+} */
