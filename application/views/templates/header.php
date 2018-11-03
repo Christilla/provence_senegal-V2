@@ -57,6 +57,9 @@
           <a class="nav-link text-light" href="<?php echo site_url('actu')?>">Actualités</a> 
       </li>
 
+        <li class="nav-item">
+            <a class="nav-link text-light" href="<?= site_url('connexion')?>"><img src="<?= base_url('assets/img/icon.png')?>">Connexion</a>
+        </li>
 
     </ul>
   
@@ -64,7 +67,7 @@
   </div>
 </nav>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -90,7 +93,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+ -->
 
 
 
